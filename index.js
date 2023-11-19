@@ -5,6 +5,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
   const searchInput = document.createElement("input")
   searchInput.id = "searchInput"
+  searchInput.placeholder = "Digite o nome de algum Pokemon"
 
   const searchButton = document.createElement("button")
   searchButton.id = "searchButton"
