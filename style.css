@@ -1,0 +1,110 @@
+:root {
+  font-family: system-ui, -apple-system, sans-serif;
+
+  margin: 0;
+  line-height: 0.5em;
+
+  color: #d9e3f0;
+  background-color: #303030;
+}
+
+body {
+  margin: 0;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 1em;
+}
+
+#searchBox {
+  display: flex;
+  align-items: center;
+  top: 2.5vh;
+  position: absolute;
+  padding: 15px;
+  border-radius: 10px;
+  background-color: #202020;
+}
+
+#searchButton,
+#searchInput {
+  outline: 0;
+  border: none;
+  background-color: transparent;
+}
+
+#searchBox #searchInput {
+  font-size: 1em;
+  color: #d9e3f0;
+}
+
+#searchBox #searchButton img {
+  height: auto;
+  max-width: 100%;
+}
+
+#pokeCard {
+  max-width: 25vw;
+  padding: 20px 30px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  text-transform: capitalize;
+  background-color: #202020;
+}
+
+#pokeImage {
+  height: auto;
+  max-width: 100%;
+  margin: 10px;
+}
+
+#pokeAbout {
+  gap: 0 10px;
+  display: flex;
+  align-items: center;
+}
+
+#pokeAbout #pokeName {
+  font-size: 1.5em;
+  font-weight: 600;
+}
+
+#pokeAbout #pokeType {
+  padding: 5px 10px;
+  line-height: 1em;
+  font-size: 0.8em;
+  border-radius: 80px;
+  background-color: #303030;
+}
+
+#pokeAbilities {
+  opacity: 0.8;
+  font-weight: 500;
+  font-size: 0.8em;
+}
+
+#pokeStats {
+  display: flex;
+  gap: 5px;
+  flex-wrap: wrap;
+  margin: 25px 0;
+}
+
+#pokeStats .pokeStat {
+  font-size: 0.9em;
+  padding: 10px 15px;
+  border-radius: 5px;
+  background-color: #303030;
+}
+
+#boxError {
+  line-height: 15px;
+  text-align: center;
+}
+
+#msgError {
+  font-size: 5em;
+  font-family: monospace;
+  color: #ef4444;
+}
