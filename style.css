@@ -14,7 +14,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 0 1em;
+  padding: 0 2vw;
 }
 
 #searchBox {
@@ -45,7 +45,7 @@ body {
 }
 
 #pokeCard {
-  max-width: 25vw;
+  max-width: 100%;
   padding: 20px 30px;
   border-radius: 8px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
@@ -107,4 +107,16 @@ body {
   font-size: 5em;
   font-family: monospace;
   color: #ef4444;
+}
+
+@media (min-width: 500px) {
+  #pokeCard {
+    max-width: 60vw;
+  }
+}
+
+@media (min-width: 700px) {
+  #pokeCard {
+    max-width: 25em;
+  }
 }
