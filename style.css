@@ -22,7 +22,7 @@ body {
   align-items: center;
   top: 2.5vh;
   position: absolute;
-  padding: 15px;
+  padding: 10px 20px;
   border-radius: 10px;
   background-color: #202020;
 }
@@ -32,6 +32,17 @@ body {
   outline: 0;
   border: none;
   background-color: transparent;
+}
+
+#searchButton {
+  padding: 5px 7px;
+  cursor: pointer;
+}
+
+#searchButton:hover,
+#searchButton:focus {
+  border-radius: 100%;
+  background-color: #353535;
 }
 
 #searchBox #searchInput {

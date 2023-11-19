@@ -1,5 +1,5 @@
 document.addEventListener("DOMContentLoaded", function () {
-  const pokemon = "Ditto".toLowerCase()
+  let pokemon = "Pikachu".toLowerCase()
 
   fetch(`https://pokeapi.co/api/v2/pokemon/${pokemon}`)
     .then((response) => response.json())
@@ -9,13 +9,16 @@ document.addEventListener("DOMContentLoaded", function () {
 
       const searchInput = document.createElement("input")
       searchInput.id = "searchInput"
-      searchInput.type = "search"
 
       const searchButton = document.createElement("button")
       searchButton.id = "searchButton"
 
+      searchButton.addEventListener("click", function () {
+        pokemon = searchInput.value.toLowerCase()
+      })
+
       const imgButtonSearch = document.createElement("img")
-      imgButtonSearch.src = "/public/search.svg"
+      imgButtonSearch.src = "./public/search.svg"
 
       searchButton.appendChild(imgButtonSearch)
       searchBox.append(searchInput, searchButton)
